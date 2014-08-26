@@ -1,9 +1,9 @@
-outcomes <- list(
-	"heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
-	"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
-	"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
-
 best <- function(state, outcome) {
+	outcomes <- list(
+		"heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+		"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+		"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+	
 	## Read outcome data
 	data.all <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
 	
